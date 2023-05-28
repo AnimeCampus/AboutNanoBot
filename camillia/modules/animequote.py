@@ -1,9 +1,7 @@
-
 import requests 
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-#NAME -> YOUR BOTS FILE NAME 
 from camellia import pbot as app
 
 
@@ -22,11 +20,11 @@ async def callback_quotek(_, query):
         quote = kk['quote']
         character = kk['character']
         caption = f"""
-** ANIME:** `{anime}`
+**⛩️ANIME:** `{anime}`
 
-** CHARACTER:** `{character}`
+**🥷CHARACTER:** `{character}`
 
-** QUOTE:** `{quote}`"""
+**📜QUOTE:** `{quote}`"""
         await query.message.edit(caption,
                            reply_markup=InlineKeyboardMarkup([
                                [
@@ -36,16 +34,16 @@ async def callback_quotek(_, query):
                            ]))
 
 
-@app.on_message(filters.command('aniquote'), group=91)
+@app.on_message(filters.command('/animequotes'), group=91)
 async def quote(_, message):
     kk = requests.get('https://animechan.vercel.app/api/random').json()
     anime = kk['anime']
     quote = kk['quote']
     character = kk['character']
     caption = f"""
-** ANIME:** `{anime}`
+**⛩️ANIME:** `{anime}`
 
-** CHARACTER:** `{character}`
+**🥷CHARACTER:** `{character}`
 
-** QUOTE:** `{quote}`"""
+**📜QUOTE:** `{quote}`"""
     await message.reply(caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("CHANGE 🔄", callback_data="quotek:change")]]))")
