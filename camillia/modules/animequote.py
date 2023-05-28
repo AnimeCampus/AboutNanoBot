@@ -2,7 +2,7 @@ import requests
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from camellia import pbot as app
+from camillia import pbot as app
 
 
 def call_back_in_filter(data):
