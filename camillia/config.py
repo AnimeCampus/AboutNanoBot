@@ -14,9 +14,9 @@ class Config(object):
     MONGO_DB_URI = "mongodb+srv://sonu55:sonu55@cluster0.vqztrvk.mongodb.net/?retryWrites=true&w=majority"  # Get ths value from cloud.mongodb.com
 
     # Telegraph link of the image which will be shown at start command.
-    START_IMG = "https://graph.org/file/692621a2c3d32788c876b.jpg"
+    START_IMG = ""
 
-    SUPPORT_CHAT = "MissCamelliaUpdate"  # Your Telegram support group chat username where your users will go and bother you
+    SUPPORT_CHAT = "MissCamelliaSupport"  # Your Telegram support group chat username where your users will go and bother you
 
     TOKEN = "5876546515:AAE0vVvCy6ucPjSc4oS0gECtmjAUmkP9tuo"  # Get bot token from @BotFather on Telegram
 
