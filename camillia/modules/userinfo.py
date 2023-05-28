@@ -319,10 +319,10 @@ def info(update: Update, context: CallbackContext):
                     [
                         [
                             InlineKeyboardButton(
-                                "ʜᴇᴀʟᴛʜ", url="https://t.me/updatesxd/4"
+                                "ᴄʜᴀɴɴᴇʟ", url="https://t.me/MissCamelliaUpdate"
                             ),
                             InlineKeyboardButton(
-                                "ᴅɪꜱᴀꜱᴛᴇʀ", url="https://t.me/updatesxd/5"
+                                "ᴄʜᴀᴛ", url="MissCamelliaSupport.t.me"
                             ),
                         ],
                     ]
