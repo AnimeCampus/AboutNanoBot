@@ -46,4 +46,4 @@ async def quote(_, message):
 **🥷CHARACTER:** `{character}`
 
 **📜QUOTE:** `{quote}`"""
-    await message.reply(caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("CHANGE 🔄", callback_data="quotek:change")]]))")
+    await message.reply(caption, reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("CHANGE 🔄", callback_data="quotek:change")]]))
